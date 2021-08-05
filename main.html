@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>nice movies</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <noscript>
+      <div class="warning">Please enable JavaScript to view this page.</div>
+    </noscript>
+    <script>
+      $(document).ready(function(){
+        loadXMLDataInline();
+      });
+    </script>
+
+    <div class="navbar">
+      <a href="https://www.imdb.com/">IMDb</a>
+      <a href="https://www.metacritic.com/">Metacritic</a>
+      <a href="https://www.rottentomatoes.com/">Rotten Tomatoes</a>
+      <a href="https://www.fandango.com/">Fandango</a>
+      <a href="https://www.flixster.com/">Flixster</a>
+    </div>
+
+    <div class="banner">
+      nice movies
+      <div>
+        movies so good you'll quit your job and disown your family
+      </div>
+    </div>
+
+    <!-- Used to align sidebar and accordion -->
+    <div id="homepage-container">
+      <div class="sidebar">
+        <div class="search-box">
+          <input type="search" id="site-search" placeholder="Search...">
+          <button class="search">></button>
+        </div>
+        <button id="show-all">Expand All</button>
+        <button id="hide-all">Collapse All</button>
+        <div id="filter"></div>
+      </div>
+
+      <div class="accordion">
+        <div id="items"></div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      Website copyright © 2019 please give me a good score I spent a lot of time on this, LLC
+      <br>All film content including, but not limited to, movie posters and movie posters are intellectual property of their respective owners and are used without permission.
+    </div>
+
+  </body>
+</html>

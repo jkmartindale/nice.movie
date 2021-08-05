@@ -1,0 +1,13 @@
+{
+    "cleanUrls": true,
+    "github": {
+        "silent": true
+    },
+    "redirects": [
+        { "source": "/main", "destination": "/"}
+    ],
+    "rewrites": [
+        { "source": "/", "destination": "/main" }
+    ],
+    "trailingSlash": false
+}

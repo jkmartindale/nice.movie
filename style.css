@@ -1,0 +1,257 @@
+/*
+ * Base Styles
+*/
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+button {
+    background-color: #ff9900;
+    border: thin solid #b45f06;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.25rem;
+}
+
+button:hover {
+    background-color: #f6b26b;
+}
+
+body {
+    background-color: #f1c232;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+/*
+ * Common Classes
+*/
+
+.banner {
+    background-color: #cc0000;
+    height: 110px;
+    padding: 20px 20px 20px 20px;
+    position: relative;
+    font-size: 80px;
+    text-align: left;
+}
+
+.banner div {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+
+    font-size: 20px;
+    text-align: right;
+    width: 30em;
+}
+
+.description {
+    text-align: justify;
+}
+
+.details {
+    margin: 0 25px;
+    overflow: auto;
+}
+
+.details-button {  
+    float: right;
+    margin: 0 !important;
+    width: 120px !important;
+}
+
+.footer {
+    background-color: #cc0000;
+    clear: both;
+    font-size: 16px;
+    font-style: italic;
+    text-align: right;
+    padding: 10px 20px;
+}
+
+.navbar {
+    background-color: black;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.navbar a {
+    border-left: medium solid white;
+    border-right: medium solid white;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/*
+ * Search
+*/
+
+input[type='search'] {
+    background-color: #f9cb9c;
+    border: none;
+    color: #b45f06;
+    padding: 5px 10px;
+    margin: 0;
+    width: 90%;
+}
+
+input[type='search']::placeholder {
+    color: #b45f06;
+    font-style: italic;
+}
+
+button.search {
+    background-color: #ff9900;
+    border: none;
+    color: white;
+    width: 10%;
+}
+
+button.search:hover {
+    background-color: #b45f06;
+}
+
+.search-box {
+    border: thin solid #b45f06;
+    display: flex;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.floating {
+    float: right;
+    margin: 25px;
+    width: 300px !important;
+}
+
+/*
+ * Homepage
+*/
+
+h2 {
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0;
+}
+
+form {
+    clear: both;
+}
+
+.accordion {
+    margin: 25px;
+    width: 100%; /* Keeps width sane when everything is collapsed */
+}
+
+#hide-all {
+    border: thin solid white;
+    float: right;
+}
+
+#homepage-container {
+    display: flex;
+}
+
+.item-details {
+    background-color: #b45f06;
+    display: flex;
+    padding: 25px;
+}
+
+.item-summary {
+    background-color: #ff9900;
+    border: thick solid #b45f06;
+    overflow: auto;
+    padding: 10px 20px;
+}
+
+.item-summary:hover {
+    background-color: #f6b26b;
+}
+
+.item-summary .title {
+    float: left;
+    margin: 0;
+}
+
+.item-summary .year {
+    float: right;
+    margin: 0;
+}
+
+#show-all {
+    border: thin solid white;
+    float: left;
+}
+
+.sidebar {
+    background-color: #ff9900;
+    padding: 15px;
+    width: 15%;
+}
+
+.small-title {
+    font-size: 2.2em;
+}
+
+/*
+ * Details View
+*/
+
+.details .title {
+    font-size: 3em;
+}
+
+.details .year {
+    font-size: 1.5em;
+}
+
+.details .year, .genres, .duration {
+    color: #f9cb9c;
+    margin: 5px 0;
+}
+
+#details-container {
+    background-color: #b45f06;
+    clear: both;
+    display: flex;
+    margin: 25px;
+    padding: 25px;
+}
+
+#home-button {
+    float: left;
+    margin: 25px !important;
+}
+
+/* Warning that appears at the top when JavaScript is turned off. */
+.warning {
+    background-color: #ffff80;
+    color: #ff4040;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    padding: 4px 0px 4px 0px;
+}
